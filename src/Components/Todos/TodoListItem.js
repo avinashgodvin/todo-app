@@ -1,12 +1,17 @@
-import React, {useState} from "react";
+import React from "react";
 import "./Todo.css";
 
 const TodoListItem = ({ todo, onRemovePressed, onCompletedPressed }) => {
-
   return (
     <div className="container">
       <div className=" container border  m-3 p-2 ">
-        <h3 className={todo.isCompleted ? "card-header mark-as-completed" : "card-header"}>{todo.text}</h3>
+        <h3
+          className={
+            todo.isCompleted ? "card-header mark-as-completed" : "card-header"
+          }
+        >
+          {todo.text}
+        </h3>
         <div className="container d-flex justify-content-end card-text">
           {todo.isCompleted ? null : (
             <button
