@@ -1,3 +1,29 @@
-.mark-as-completed{
-    text-decoration: line-through;
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.mark-as-completed {
+  text-decoration: line-through;
+}
+.section-header-completed-todos {
+  color: rgb(11, 114, 11);
+  background-color: aliceblue;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+.section-header-incomplete-todos {
+  color: rgb(233, 86, 41);
+  background-color: rgb(255, 240, 240);
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+/* to avoid right overflow in mobile device */
+.container {
+  width: calc(100% - 2px) !important;
+}
+
+.container-border {
+  border: solid 2px black;
 }

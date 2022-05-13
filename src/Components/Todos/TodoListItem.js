@@ -4,7 +4,7 @@ import "./Todo.css";
 const TodoListItem = ({ todo, onRemovePressed, onCompletedPressed }) => {
   return (
     <div className="container">
-      <div className=" container border  m-3 p-2 ">
+      <div className=" container border  mt-2 p-2 ">
         <h3
           className={
             todo.isCompleted ? "card-header mark-as-completed" : "card-header"
