@@ -15,7 +15,7 @@ const NewTodoForm = ({ todos, onCreatePressed }) => {
             className="form-control"
             value={inputValue}
             onChange={(e) => setInputValue(e.target.value)}
-            placeholder="Type your todo"
+            placeholder="Enter todo"
           />
         </div>
         <div className="col col-lg-2 d-flex justify-content-start">
